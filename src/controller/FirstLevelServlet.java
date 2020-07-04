@@ -77,7 +77,7 @@ public class FirstLevelServlet extends HttpServlet {
 
 		if (seeAnswer != null) {
 			if (firstCharacter != null) {
-				String output = string.firstCharacter(input);
+				String output = string.first(input);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);
@@ -86,7 +86,7 @@ public class FirstLevelServlet extends HttpServlet {
 
 		if (seeAnswer != null) {
 			if (length != null) {
-				String output = string.length(input);
+				String output = string.len(input);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);
@@ -95,7 +95,7 @@ public class FirstLevelServlet extends HttpServlet {
 
 		if (seeAnswer != null) {
 			if (trim != null) {
-				String output = string.trim(input);
+				String output = string.trimmer(input);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);

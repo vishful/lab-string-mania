@@ -27,5 +27,25 @@ public class StringMethod {
 	public String trimmer(String text) {
 		return text.trim();
 	}
+
+	public void setInput(String input) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String firstCharacter(String input) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getInput1() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getInput() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

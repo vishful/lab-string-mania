@@ -50,12 +50,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testFirstCharacterMethod() {
-		assertEquals("1", sm.firstCharacter("1.hai"));
-		assertEquals("@", sm.firstCharacter("@hai"));
-		assertEquals(" ", sm.firstCharacter(" hai"));
-		assertEquals("h", sm.firstCharacter("hai"));
+		assertEquals("1", sm.first("1.hai"));
+		assertEquals("@", sm.first("@hai"));
+		assertEquals(" ", sm.first(" hai"));
+		assertEquals("h", sm.first("hai"));
 		try {
-			sm.firstCharacter(" ");
+			sm.first(" ");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
@@ -64,12 +64,12 @@ public class TestStringMethod {
 
 	@Test
 	public void testLengthMethod() {
-		assertEquals("0", sm.length(""));
-		assertEquals("15", sm.length(" WelcomeToJava "));
-		assertEquals("4", sm.length("123 "));
-		assertEquals("1", sm.length("."));
+		assertEquals("0", sm.len(""));
+		assertEquals("15", sm.len(" WelcomeToJava "));
+		assertEquals("4", sm.len("123 "));
+		assertEquals("1", sm.len("."));
 		try {
-			sm.length("");
+			sm.len("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
@@ -78,11 +78,11 @@ public class TestStringMethod {
 
 	@Test
 	public void testTrimMethod() {
-		assertEquals("Java", sm.trim(" Java "));
-		assertEquals("Ja va", sm.trim("Ja va "));
-		assertEquals("Java", sm.trim("  Java  "));
+		assertEquals("Java", sm.trimmer(" Java "));
+		assertEquals("Ja va", sm.trimmer("Ja va "));
+		assertEquals("Java", sm.trimmer("  Java  "));
 		try {
-			sm.trim("");
+			sm.trimmer("");
 		} catch (IllegalArgumentException e) {
 			// System.out.println("No input is given");
 			e.printStackTrace();
